@@ -1,0 +1,168 @@
+body {
+	/*font-family:;*/
+}
+h1 {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	/*color: #303133;*/
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+.header {
+	/*overflow: hidden;*/
+	height: 65px;
+	line-height: 65px;
+	background-color: #6699cc;
+	clear: both;
+}
+.hname {
+	float: left;
+	margin-left: 20px;
+	font-size: 24px;
+	font-weight: 400;
+	color: #fff;
+}
+.pcenter {
+	position: relative;
+	float: right;
+	margin-right: 40px;
+	color: #fff;
+}
+.uname {
+	position: relative;
+	display: block;
+	padding-right: 15px;
+	color: #fff;
+
+}
+.uname::after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 30px;
+	width: 5px;
+	height: 5px;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transform: rotate(45deg);
+}
+.pca:hover .uname::after {
+	transform: rotate(225deg);
+}
+.useractive {
+	display: none;
+	position: absolute;
+	overflow: hidden;
+	top: 60px;
+	left: -47px;
+	border-radius: 10px;
+	box-shadow: 0 0 7px #ccc;
+}
+.pcenter i {
+	content: "";
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 12px;
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-bottom: 5px solid #fff;
+}
+.useractive li {
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #fff;
+}
+.useractive li a {
+	display: block;
+	text-align: center;
+}
+.useractive li a:hover {
+	background-color: #9cc;
+}
+.pcenter:hover .useractive {
+	display: block;
+}
+.pcenter:hover i {
+	display: block;
+}
+/*content*/
+.content {
+	overflow: hidden;
+	background-color: #ececec;
+	width: 100%;
+}
+.aside {
+	float: left;
+	width: 15%;
+	height: 100%;
+}
+.aside li {
+	/*height: 35px;*/
+}
+.aside .xiala li {
+	background-color: #fff;
+}
+
+.aside li a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	color:#303133;
+}
+.aside li a:hover {
+	background-color: #ccc;
+}
+.aside li a span {
+	display: block;
+	position: relative;
+	float: right;
+	margin-right: 20px;
+	padding-right: 50px;
+}
+.xiala .xiala-dt span::after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 17px;
+	width: 5px;
+	height: 5px;
+	border-right: 1px solid #303133;
+	border-bottom: 1px solid #303133;
+	transform: rotate(45deg);
+	transition: all 1s;
+}
+.xiala-dt:active span::after {
+	transform: rotate(225deg);
+}
+.li-content {
+	float: right;
+	width: 85%;
+	height: 1000px;
+	background-color: #fff;
+}
+/*li-content*/
+.li-index,
+.article-list {
+	margin:15px;
+}
+.li-index a ,
+.article-list a {
+	color: #303133;
+
+}
+.li-index  a:hover,
+.article-list a:hover {
+	color: #99ccff;
+}
